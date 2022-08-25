@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Bootstrap practice</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- Media query -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Material UI -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 800, 'GRAD' 0, 'opsz' 48
+    }
+  </style>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/487e21ca10.js" crossorigin="anonymous"></script>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- Custom css files -->
+  <link href="./css/main.css" rel="stylesheet">
+  <!-- GitHub Calendar -->
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+  </script>
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+</head>
+
+<body class="bg-light">
+  <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" style="color:darkslateblue;" href="#">iGyumin</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" data-target="about-me" aria-current="page" href="#about-me">ABOUT ME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-target="resume" href="#resume">RESUME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-target="gallery" href="#gallery">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-target="contact" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="intro">
+      <div class="intro-bg"></div>
+      <div class="intro-content">
+        <div class="intro-left">
+          <div class="intro-imgbox">
+            <img src="./img/motorcycle.jpg" class="rounded-circle intro-img p-2">
+            <h2>Gyumin<br>Lee</h2>
+            <hr>
+            <p>Univ. Student<br>Developer<br>Amateur Photographer</p>
+          </div>
+          <ul class="p-3 intro-sns">
+            <li>
+              <i class="fa-brands fa-github"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-youtube"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-linkedin"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="intro-right p-3" id="about-me">
+          <h1>Hello</h1>
+          <h3>I'm a student and enjoy coding various programs.</h3>
+          <div class="mt-5 mb-5">
+            <button class="btn btn-primary btn-default btn-cadetblue">RESUME</button>
+            <button class="btn btn-outline-primary btn-default btn-outline-cadetblue">GALLERY</button>
+          </div>
+          <div class="spacer"></div>
+          <div class="skills-section">
+            <h2 style="font-weight: bold;">SKILLS</h2>
+            <div class="skills-flex">
+
+              <div class="skill-item">
+                <div class="circle-outer" data-skill="HTML 5">
+                  <div class="circle-inner">
+                    <h5>Beginner</h5>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="120px" height="120px">
+                    <defs>
+                      <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                      </linearGradient>
+                    </defs>
+                    <circle cx="60" cy="60" r="52.5" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <h4>HTML 5</h4>
+              </div>
+              <div class="skill-item">
+                <div class="circle-outer" data-skill="CSS">
+                  <div class="circle-inner">
+                    <h5>Beginner</h5>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="120px" height="120px">
+                    <defs>
+                      <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                      </linearGradient>
+                    </defs>
+                    <circle cx="60" cy="60" r="52.5" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <h4>CSS</h4>
+              </div>
+              <div class="skill-item">
+                <div class="circle-outer" data-skill="JavaScript">
+                  <div class="circle-inner">
+                    <h5>Yeah,<br>Beginner</h5>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="120px" height="120px">
+                    <defs>
+                      <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                      </linearGradient>
+                    </defs>
+                    <circle cx="60" cy="60" r="52.5" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <h4>JavaScript</h4>
+              </div>
+            </div>
+            <div class="trivial-skills">
+              <button class="btn btn-skill">
+                Python
+              </button>
+              <button class="btn btn-skill">
+                C++
+              </button>
+              <button class="btn btn-skill">
+                Data Structure
+              </button>
+              <button class="btn btn-skill">
+                Algorithms
+              </button>
+              <button class="btn btn-skill">
+                Adobe Lightroom
+              </button>
+              <button class="btn btn-skill">
+                Photography
+              </button>
+            </div>
+          </div>
+          <div class="spacer"></div>
+          <div class="events">
+            <h2>Events</h2>
+            <div class="timeline">
+              <div class="event left">
+                <div class="content">
+                  <h3>2018</h3>
+                  <p>Graduated High School</p>
+                </div>
+              </div>
+              <div class="event right">
+                <div class="content">
+                  <h3>2020</h3>
+                  <p>Enrolled in Inha Univ.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="divider" id="resume">RESUME</h2>
+    <div class="resume">
+      <!-- Prepare a container for your calendar. -->
+      <div class="calendar-section">
+        <div class="calendar">
+          <!-- Loading stuff -->
+          Loading the data just for you.
+        </div>
+      </div>
+
+      <div class="resume-page">
+        <iframe class="resume-google"
+          src="https://docs.google.com/document/d/e/2PACX-1vQ7kJ8auwAlCThe2b-9klpG3KIkyaNBUx8dtZGEKevlu-PlSxFKhVYKXjNf9vm-lk2Idx7AQoy_3Ohf/pub?embedded=true"></iframe>
+        <a class="btn btn-default btn-cadetblue resume-btn"
+          href="https://docs.google.com/document/d/1ILLDjdF_4Cohvo-SP831Wl2xz9s9eZUYqzrODHrortw/edit?usp=sharing">Go to
+          resume</a>
+      </div>
+    </div>
+
+    <h2 class="divider" id="gallery">GALLERY</h2>
+    <div class="gallery">
+      <div class="gallery-left">
+        <div class="photos-grid">
+          <div class="photo-item" data-area="a">
+            <img src="./img/night_bridge.jpg">
+            <div class="photo-border-overlay"></div>
+          </div>
+          <div class="photo-item" data-area="b">
+            <img src="./img/night-seoul.jpg">
+            <div class="photo-border-overlay"></div>
+          </div>
+          <div class="photo-item" data-area="c">
+            <img src="./img/saeun.jpg">
+            <div class="photo-border-overlay"></div>
+
+          </div>
+          <div class="photo-item" data-area="d">
+            <img src="./img/reflection.jpg">
+            <div class="photo-border-overlay"></div>
+
+          </div>
+          <div class="photo-item" data-area="e">
+            <img src="./img/nseoul.jpg">
+            <div class="photo-border-overlay"></div>
+
+          </div>
+          <div class="photo-item" data-area="f">
+            <img src="./img/rose.jpg">
+            <div class="photo-border-overlay"></div>
+
+          </div>
+          <div class="photo-item" data-area="g">
+            <img src="./img/twillight.jpg">
+            <div class="photo-border-overlay"></div>
+
+          </div>
+          <div class="photo-item" data-area="h">
+            <img src="./img/doosan.jpg">
+            <div class="photo-border-overlay"></div>
+
+          </div>
+          <div class="photo-item" data-area="i">
+            <img src="./img/redrace.jpg">
+            <div class="photo-border-overlay"></div>
+
+          </div>
+          <div class="photo-item" data-area="j">
+            <img src="./img/x-shape.jpg">
+            <div class="photo-border-overlay"></div>
+
+          </div>
+          <div class="photo-item" data-area="k">
+            <img src="./img/wide.jpg">
+            <div class="photo-border-overlay"></div>
+
+          </div>
+          <div class="photo-item" data-area="l">
+            <img src="./img/moon.jpg">
+            <div class="photo-border-overlay"></div>
+
+          </div>
+          <div class="photo-item" data-area="m">
+            <img src="./img/cheoma.jpg">
+            <div class="photo-border-overlay"></div>
+
+          </div>
+          <div class="photo-item" data-area="n">
+            <img src="./img/flower.jpg">
+            <div class="photo-border-overlay"></div>
+
+          </div>
+          <div class="photo-item" data-area="o">
+            <img src="./img/seongsu.jpg">
+            <div class="photo-border-overlay"></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="gallery-right">
+        <img src="./img/camera-on-tripod.jpg" class="img-fluid">
+        <h2 class="m-3 fs-4">My Camera Setup</h2>
+        <hr>
+        <p>Soon will be updated...</p>
+      </div>
+    </div>
+
+    <h2 class="divider" id="contact">CONTACT</h2>
+    <div class="contact">
+      <div class="contact-box row">
+        <div class="contact-left col-12 col-md-5">
+          <h2>Let's get in touch</h2>
+          <p>I'm open for any news, suggestions, or foolish jokes.<br>Contact me freely!</p>
+          <div class="d-flex align-items-start mb-3">
+            <span class="material-symbols-outlined contact-icon">
+              pin_drop
+            </span>
+            <p style="vertical-align: top;">
+
+              Address: Seoul, Korea
+            </p>
+          </div>
+
+          <div class="d-flex align-items-start mb-3">
+            <span class="material-symbols-outlined contact-icon">
+              send
+            </span>
+            <p style="vertical-align: top;">
+
+              Email: rbalsdldi9@gmail.com
+            </p>
+          </div>
+          <div class="d-flex align-items-start mb-3">
+            <span class="material-symbols-outlined contact-icon">
+              public
+            </span>
+            <p style="vertical-align: top;">
+
+              soon will be updated...
+            </p>
+          </div>
+        </div>
+        <div class="contact-form col-12 col-md-7">
+          <h2>Email me</h2>
+          <form class="d-flex flex-column">
+            <div class="row">
+
+              <div class="col-12 col-md-6 mb-2">
+                <p class="mb-1">FULL NAME</p>
+                <input class="w-100 contact-field" type="text" placeholder="Name">
+              </div>
+              <div class="col-12 col-md-6 mb-2">
+                <p class="mb-1">YOUR EMAIL</p>
+                <input class="w-100 contact-field" type="email" placeholder="Email">
+              </div>
+              <div class="col-12 mb-2">
+                <p class="mb-1">SUBJECT</p>
+                <input class="w-100 contact-field" type="text" placeholder="Subject">
+              </div>
+              <div class="col-12 mb-2">
+                <p class="mb-1">MESSAGE</p>
+                <textarea class="w-100 contact-field" placeholder="Message" style="resize:none;"></textarea>
+              </div>
+
+            </div>
+            <button class="btn btn-default btn-outline-cadetblue ms-auto">Send</button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+    <h2 class="divider">Have a nice day</h2>
+    <footer class="w-100 p-3 text-end footer">
+      <p>Copyright 2022 © All right reserved</p>
+      <p>Written by Gyumin Lee</p>
+    </footer>
+  </div>
+</body>
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<!-- GitHub Calendar -->
+<script>
+
+  GitHubCalendar(".calendar", "TheHulmaren", { responsive: true }, {
+    proxy(username) {
+      return fetch(`https://your-proxy.com/github?user=${username}`)
+    }
+  }).then(r => r.text())
+
+</script>
+<script>
+</script>
+
+</html>

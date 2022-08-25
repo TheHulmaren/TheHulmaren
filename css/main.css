@@ -1,0 +1,659 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+a, u {
+  text-decoration: none;
+}
+
+.spacer{
+  height: 100px;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.intro {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+}
+
+.intro-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+  width: 35%;
+  height: 100%;
+  background-color: cadetblue;
+  z-index: -1;
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+}
+
+.intro-left {
+  width: 40%;
+  align-self: flex-start;
+  position: sticky;
+  top: 100px;
+  background-color: powderblue;
+  box-shadow: 3px 3px 12px -3px darkslategray;
+}
+
+.intro-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.intro-imgbox {
+  padding: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.intro-imgbox h2 {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 27px;
+  text-align: center;
+}
+
+.intro-imgbox hr {
+  border: 1.5px solid cadetblue;
+  border-radius: 5px;
+  width: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1;
+}
+
+
+.intro-imgbox p {
+  font-size: 15px;
+  text-align: center;
+}
+
+.intro-sns {
+  display: flex;
+  justify-content: center;
+  background-color: ghostwhite;
+  margin: 0;
+  list-style: none;
+}
+
+.intro-sns i {
+  font-size: 27px;
+  margin: 7px;
+}
+
+.intro-right {
+  width: 60%;
+}
+
+.intro-right h1 {
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.btn-default {
+  background-color: cadetblue;
+  border: 2px solid cadetblue;
+  transition: 0.2s;
+  border-radius: 15px 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: ghostwhite;
+}
+
+.btn-default:hover {
+  background-color: ghostwhite;
+  border: 2px solid cadetblue;
+  color: black;
+  transition: 0.2s;
+}
+
+.btn-cadetblue {
+  background-color: cadetblue;
+}
+
+.btn-cadetblue:hover {
+  border: 2px solid cadetblue;
+  color: cadetblue;
+}
+
+.btn-outline-cadetblue {
+  background-color: ghostwhite;
+  border: 2px solid cadetblue;
+  color: cadetblue;
+}
+
+.btn-outline-cadetblue:hover {
+  background-color: cadetblue;
+  color: ghostwhite;
+}
+
+.circle-outer {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: ghostwhite;
+  box-shadow: -3px 3px 10px gray;
+  transform: rotate(-90deg);
+
+}
+
+.circle-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90px;
+  height: 90px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  box-shadow: inset -3px 3px 10px gainsboro;
+  z-index: 1;
+}
+
+.circle-inner h5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  font-size: 13px;
+}
+
+.circle-outer circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 15px;
+  stroke-dasharray: 330;
+}
+
+.circle-outer[data-skill="HTML 5"] circle {
+  stroke-dashoffset: 218;
+}
+
+.circle-outer[data-skill="CSS"] circle {
+  stroke-dashoffset: 218;
+}
+
+.circle-outer[data-skill="JavaScript"] circle {
+  stroke-dashoffset: 218;
+}
+
+.skills-section {
+  
+}
+
+
+.skills-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-top: 5%;
+}
+
+.skill-item {
+  padding-right: 20px;
+}
+
+.skill-item h4 {
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+.trivial-skills {
+  display: inline-block;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.btn-skill {
+  background-color: ghostwhite;
+  border: 2px solid darkmagenta;
+  transition: 0.2s;
+  border-radius: 15px 5px;
+  padding-left: 35px;
+  padding-right: 35px;
+  color: darkmagenta;
+  margin: 5px;
+}
+
+.btn-skill:hover {}
+
+.events {
+  
+}
+
+.events h2 {
+  font-weight: bold;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.event {
+  padding: 10px 10px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.event::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  background-color: white;
+  border: 4px solid cadetblue;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the event to the left */
+.left {
+  left: 0;
+}
+
+/* Place the event to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left event (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right event (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -10px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-left {
+  order: 1;
+  width: 70%;
+}
+
+.gallery-right {
+  order: 2;
+  width: 30%;
+  align-self: flex-start;
+  position: sticky;
+  top: 100px;
+  background-color: powderblue;
+  box-shadow: 3px 3px 12px -3px darkslategray;
+  text-align: center;
+}
+
+.gallery-right hr {
+  border: 1.5px solid cadetblue;
+  border-radius: 5px;
+  width: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1;
+}
+
+
+.divider {
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: right;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.photos-grid {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 200px 200px 200px 200px 200px 200px 200px;
+  grid-template-areas:
+    "a a b c"
+    "d d e f"
+    "d d e g"
+    "h i i j"
+    "h i i j"
+    "k k k l"
+    "m n o o";
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.photo-item {
+  margin: 3px;
+  position: relative;
+}
+
+.photo-border-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0px solid ghostwhite;
+  transition: 0.3s;
+}
+
+.photo-item:hover .photo-border-overlay {
+  transition: 0.3s;
+  border: 10px solid ghostwhite;
+  opacity: 1;
+}
+
+.photo-item[data-area="a"] {
+  grid-area: a;
+}
+
+.photo-item[data-area="b"] {
+  grid-area: b;
+}
+
+.photo-item[data-area="c"] {
+  grid-area: c;
+}
+
+.photo-item[data-area="d"] {
+  grid-area: d;
+}
+
+.photo-item[data-area="e"] {
+  grid-area: e;
+}
+
+.photo-item[data-area="f"] {
+  grid-area: f;
+}
+
+.photo-item[data-area="g"] {
+  grid-area: g;
+}
+
+.photo-item[data-area="h"] {
+  grid-area: h;
+}
+
+.photo-item[data-area="i"] {
+  grid-area: i;
+}
+
+.photo-item[data-area="j"] {
+  grid-area: j;
+}
+
+.photo-item[data-area="k"] {
+  grid-area: k;
+}
+
+.photo-item[data-area="l"] {
+  grid-area: l;
+}
+
+.photo-item[data-area="m"] {
+  grid-area: m;
+}
+
+.photo-item[data-area="n"] {
+  grid-area: n;
+}
+
+.photo-item[data-area="o"] {
+  grid-area: o;
+}
+
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.resume{
+  display: flex;
+  max-width: 1100px;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.calendar-section{
+  width: 50%;
+  padding: 10px;
+}
+
+.resume-page{
+  position: relative;
+  width: 50%;
+  padding: 10px;
+}
+
+.resume-google{
+  width: 100%;
+  height: 100%;
+}
+
+.resume-btn{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 30px;
+}
+
+.contact{
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contact-box{
+  width: 100%;
+  margin:0;
+  padding: 2%;
+}
+
+.contact-left{
+  background-color: cadetblue;
+  padding: 3%;
+  color: ghostwhite;
+}
+
+.contact-form{
+  background-color: ghostwhite;
+  padding: 3%;
+}
+
+.contact-left .contact-icon{
+  flex-shrink: 0;
+  margin-right: 7px;
+  padding: 7px;
+  border: 1px solid ghostwhite;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.contact-field{
+  border: none;
+  border-bottom: 2px solid lightblue;
+  background-color: ghostwhite;
+  padding: 2%;
+  transition: 0.3s;
+}
+
+.contact-field:focus{
+  outline: none;
+  border-bottom: 2px solid darkslateblue;
+  transition: 0.3s;
+}
+
+.footer{
+  background-color: cadetblue;
+  color: ghostwhite;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 768px) {
+
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .event {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .event::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 20px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+
+  .intro-bg{
+    height: 600px;
+    width: 300px;
+  }
+
+  .intro-left{
+    width: 80%;
+    margin: 20px;
+    margin-left: auto;
+    position:static;
+    
+  }
+
+  .intro-right{
+    width: 100%;
+  }
+
+  .gallery-right{
+    width: 100%;
+    margin: 20px;
+    order: 1;
+    position: static;
+  }
+
+  .gallery-left{
+    order: 2;
+    width: 100%;
+  }
+
+  .spacer{
+    height: 30px;
+  }
+
+  .calendar-section{
+    width: 100%;
+  }
+
+  .resume-page{
+    width: 100%;
+  }
+
+  .photos-grid{
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+  }
+}
+
