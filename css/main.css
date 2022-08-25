@@ -386,12 +386,22 @@ a, u {
 
 
 .divider {
-  max-width: 1100px;
-  margin-right: auto;
+  display: block;
+  width: fit-content;
   margin-left: auto;
   text-align: right;
   padding: 15px;
-  font-weight: bold;
+  padding-bottom: 0px;
+  font-weight: bolder;
+}
+
+.divider hr{
+  border: 1.5px solid cadetblue;
+  border-radius: 5px;
+  margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1;
 }
 
 .photos-grid {
@@ -580,6 +590,7 @@ a, u {
   background-color: cadetblue;
   color: ghostwhite;
 }
+
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 768px) {
