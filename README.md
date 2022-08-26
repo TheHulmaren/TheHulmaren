@@ -1,16 +1,22 @@
-### Hi there 👋
+한국어
 
-<!--
-**TheHulmaren/TheHulmaren** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+안녕하세요? 
+누추한 제 깃헙 페이지에 오신걸 환영합니다.
+별거 없는데 뭐 쓱 둘러보고 가시면 되겠습니다.
 
-Here are some ideas to get you started:
+요즘 꽂혀있는거: Node.js, HTML, CSS
+예전에 꽂혔다가 지금은 잘 안하는거: iOS 개발, Unity, Python
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+ㅃ
+
+English
+
+Welcome?
+Nothing much out here in my profile.
+So just go keep doing what you were doing
+
+I'm now interested in topics such as: Node.js HTML CSS
+Used to dig but currently not: iOS Unity Python
+
+Bye
+
